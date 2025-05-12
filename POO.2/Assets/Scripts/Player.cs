@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public float velocidade = 10;
     private void Start()
     {
+        velocidade = GetComponent<Personagem>().Velocidade();
         _rigidbody = GetComponent<Rigidbody>();
     }
 
