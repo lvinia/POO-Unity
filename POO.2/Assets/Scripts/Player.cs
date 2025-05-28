@@ -41,9 +41,17 @@ public class Player : MonoBehaviour
         else
         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.W))
         {
-            posicao.x = posicao.x + velocidade * Time.deltaTime;
+            posicao.x = posicao.x - velocidade * Time.deltaTime;
+            posicao.z = posicao.z + velocidade * Time.deltaTime;
+            transform.rotation = Quaternion.Euler(0,-45,0);
+            andando = true;
+        }
+        else
+        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S))
+        {
+            posicao.x = posicao.x - velocidade * Time.deltaTime;
             posicao.z = posicao.z - velocidade * Time.deltaTime;
-            transform.rotation = Quaternion.Euler(0,135,0);
+            transform.rotation = Quaternion.Euler(0,-135,0);
             andando = true;
         }
         else

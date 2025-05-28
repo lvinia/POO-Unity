@@ -5,6 +5,8 @@ public class MovimentoInimigo : MonoBehaviour
     private GameObject _player;
     public GameObject ataqueObject;
     
+    public bool andando = false;
+    public bool ataque = false;
     
     private Rigidbody _rigidbody;
     public float velocidade;
@@ -23,6 +25,8 @@ public class MovimentoInimigo : MonoBehaviour
     }
     void Update()
     {
+        andando = false;
+        
         _sphereCollider.radius = raioDeVisao;
 
         if (Vector3.Distance(transform.position, _player.transform.position) > raioDeVisao)
@@ -32,6 +36,7 @@ public class MovimentoInimigo : MonoBehaviour
                 transform.LookAt(_player.transform.position);
                 transform.position = Vector3.MoveTowards(transform.position, _player.transform.position,
                     velocidade * Time.deltaTime);
+                andando = true;
             }
 
             ataqueObject.SetActive(false);
@@ -39,6 +44,7 @@ public class MovimentoInimigo : MonoBehaviour
         else
         {
             ataqueObject.SetActive(true);
+            ataque = true;
         }
         
         Debug.DrawLine(transform.position, _player.transform.position, Color.red);

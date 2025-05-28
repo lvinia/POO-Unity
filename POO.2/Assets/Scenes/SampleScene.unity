@@ -119,6 +119,110 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &170141357
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1927927210}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5978b56f2259237438d300ba8d72f63c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.92929
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5978b56f2259237438d300ba8d72f63c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.47184342
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5978b56f2259237438d300ba8d72f63c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.92929
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5978b56f2259237438d300ba8d72f63c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5978b56f2259237438d300ba8d72f63c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.44234
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5978b56f2259237438d300ba8d72f63c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00016284
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5978b56f2259237438d300ba8d72f63c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5978b56f2259237438d300ba8d72f63c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5978b56f2259237438d300ba8d72f63c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5978b56f2259237438d300ba8d72f63c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5978b56f2259237438d300ba8d72f63c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5978b56f2259237438d300ba8d72f63c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5978b56f2259237438d300ba8d72f63c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5978b56f2259237438d300ba8d72f63c, type: 3}
+      propertyPath: m_Name
+      value: Skeleton_Minion
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5978b56f2259237438d300ba8d72f63c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 170141360}
+  m_SourcePrefab: {fileID: 100100000, guid: 5978b56f2259237438d300ba8d72f63c, type: 3}
+--- !u!4 &170141358 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5978b56f2259237438d300ba8d72f63c, type: 3}
+  m_PrefabInstance: {fileID: 170141357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &170141359 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5978b56f2259237438d300ba8d72f63c, type: 3}
+  m_PrefabInstance: {fileID: 170141357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &170141360
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170141359}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 17d25acc0778b424eb1da1825d6a2e94, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &338083678
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,6 +895,7 @@ GameObject:
   - component: {fileID: 1927927212}
   - component: {fileID: 1927927213}
   - component: {fileID: 1927927214}
+  - component: {fileID: 1927927215}
   m_Layer: 0
   m_Name: Inimigo
   m_TagString: Inimigo
@@ -847,7 +952,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927927205}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -903,11 +1008,12 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.93, y: 1.93, z: 0.03878884}
-  m_LocalScale: {x: 1.5157696, y: 3.5692577, z: 1}
+  m_LocalScale: {x: 1.5157696, y: 3.044898, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2138889354}
   - {fileID: 338083679}
+  - {fileID: 170141358}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1927927211
@@ -983,8 +1089,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ataqueObject: {fileID: 338083678}
+  andando: 0
+  ataque: 0
   velocidade: 12
   raioDeVisao: 3
+--- !u!114 &1927927215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927927205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e26cf401bb35a7f438efc182a51ec582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 170141360}
+  velocidadeDaAnimacao: 1
 --- !u!1 &2138889353
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,7 +1125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2138889354
 Transform:
   m_ObjectHideFlags: 0

@@ -15,5 +15,10 @@ public class PlayerManager : MonoBehaviour
     {
         animator.SetBool("Andando", player.andando);
         animator.speed = velocidadeDaAnimacao;
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            animator.SetTrigger("Ataque");
+        }
     }
 }
