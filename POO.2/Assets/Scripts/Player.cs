@@ -20,8 +20,6 @@ public class Player : MonoBehaviour
         Vector3 posicao = transform.position;
         
         andando = false;
-        
-        //esquerda X-
 
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D))
         {
@@ -54,7 +52,8 @@ public class Player : MonoBehaviour
             transform.rotation = Quaternion.Euler(0,-135,0);
             andando = true;
         }
-        else
+        else 
+            //esquerda X-
         if (Input.GetKey(KeyCode.A))
         {
             posicao.x = posicao.x - velocidade * Time.deltaTime;
