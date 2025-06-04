@@ -4,15 +4,16 @@ using UnityEngine;
 public class TesteDeDano : MonoBehaviour
 {
     private Personagem personagem;
-
+    
     private void OnCollisionEnter(Collision colisao)
     {
-        if (colisao.gameObject.CompareTag("Inimigo"))
+        if (colisao.gameObject.CompareTag("Ataque"))
         {
-            int energia_atual =  personagem.Energia() - colisao.gameObject.GetComponent<Inimigo>().DanoDoInimigo();
-            
+            int energia_atual = personagem.Energia() 
+                                - colisao.gameObject.GetComponent<Ataque>().AtaqueDoInimigo();
+           
             personagem.AtribuirEnergia(energia_atual);
-            
+           
             Debug.Log("O personagem " +personagem.NomeDoPersonagem()+" tem agora "+personagem.Energia());
         }
     }
@@ -22,6 +23,7 @@ public class TesteDeDano : MonoBehaviour
         personagem = GetComponent<Personagem>();
     }
 
+  
     void Update()
     {
         
